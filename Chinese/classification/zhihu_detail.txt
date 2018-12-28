@@ -1,0 +1,39 @@
+请注意，ieee_zhihu_cup.des3和ieee_zhihu_cup.rar内容一致，请选择一个下载。ieee_zhihu_cup.des3为Linux/Mac下的压缩文件，数据集解压命令： dd if=ieee_zhihu_cup.des3 |openssl des3 -d -k Pg5EnkJP7iYyRBt5|tar zxf - 。 ieee_zhihu_cup.rar 为windows下的rar格式压缩文件。
+
+为了保护用户隐私，所有的原始文本信息都经过特殊编码处理。问题标题、问题描述、话题名字、话题描述的原始信息都被编码成单字 ID 序列和词语 ID 序列。单字包含单个汉字、中韩文字、英文字母、标点及空格等；词语包含切词后的中文词语、英文单词、标点及空格等。 单字 ID 和词语 ID 存在于两个不同的命名空间，即词语中的单字词或者标点，和单字中的相同字符及相同标点不一定有同一个 ID。
+
+char_embedding.txt 和 word embedding.txt
+
+分别是字符级别的 256 维的 embedding 向量及词语级别的 256 维的 embedding 向量。以上两个文件都由 google word2vec 训练得到，保存成 txt 格式。可以使用 word2vec 直接加载。数据格式如下:
+
+第一行是两个数字，指明了词汇表的大小及 embedding 向量的长度；
+
+其余的各行均为 257 列，第一列是 char_id 或者 word_id，其后是 256 个浮点数，代表 256 维 embedding 向量。
+
+词汇表中省略掉了出现频次为 5 以下的字符或者词语，因此在训练和验证语料中出现的词汇有可能没有对应的 word embedding 向量。
+
+question_train_set.txt
+
+训练集中包含的问题信息；一共 5 列，各个列之间用 \t 分割。格式：
+
+question_id ct1,ct2,ct3,...,ctn wt1,wt2,wt3,...,wtn cd1,cd2,cd3,...cdn wd1,wd2,wd3,...,wdn
+
+第二列为 title 的字符编号序列；第三列是 title 的词语编号序列；第四列是描述的字符编号序列；第五列是描述的词语标号序列。
+
+question_topic_train_set.txt
+
+问题与话题标签的绑定关系。一共有两列，各个列之间用 \t 分割。注意，如果一个问题绑定了多个话题标签，这些标签是无序的。格式如下：
+
+question_id topic_id1,topic_id2...topic_idn
+
+topic_info.txt:
+
+话题信息；一共 6 列，各个列之间用 \t 分割。格式：
+
+topic_id pid_1,pid_2,...,pidn cn1,cn2,cn3,...,cnn wn1,wn2,wn3,...,wnn cd1,cd2,cd3,...,cdn wd1,wd2,wd3,...,wdn
+
+第二列为话题的父话题 id。话题之间是有向无环图结构，一个话题可能有 0 到多个父话题。第三列为话题名字的字符编号序列；第四列为话题名字的词语编号序列；第五列为话题描述的字符编号序列；第六列为话题描述的词语编号序列。
+
+question_eval_set.txt
+
+该文件格式和 question_train_set.txt 一致。
