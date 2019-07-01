@@ -1,11 +1,16 @@
 把自己找到的语料和语言资源整理一下，避免以后需要的时候又浪费时间去收集（长期坑位）。
 
+PS：
+1. 数据使用范围、授权请参考原始发布源（如果有的话），如有侵权，请提issue联系删除。
+2. 有的数据源（网站、论文）提供了多语语料，为避免重复，只在中文或外语对应章节列出。如有多语资源，会在相应章节进行说明（如需要特定任务的数据集，可以分别在中文和外语语料对应章节进行查看）。
+
 目录：
 - [1. 中文语料](#1)
   - [1.1 生语料](#1.1)
   - [1.2 结构化数据](#1.2)
   - [1.3 文本分类数据集](#1.3)
   - [1.4 序列标注数据集（分词、命名实体识别、词性标注等）](#1.4)
+  - [1.5 语义相似度（文本蕴含）](#1.5)
 - [2. 外语语料](#2)
   - [2.1 生语料](#2.1)
   - [2.2 结构化数据](#2.2)
@@ -49,10 +54,46 @@ CBDB的数据是用access和sqlite两种数据库进行存储，我转了一个m
 
 ------
 
+<h3 id='1.3.3'>1.3.3 网络爬取的大规模文本分类数据集</h3>
+
+名称 | 训练集规模 | 测试集规模 | 类别数量 |说明
+---|---|---|---|---
+Dianping | 2,000,000|5000,000|2| 从大众点评爬取的用户评论。1-3星划分为负面评论、4-5星为正面评论。每个类别样本数相同。
+JD full | 3,000,000| 250,000|5|从京东爬取的用户评论。1-5星每个星级为一个类别，类别的样本数相同。
+JD binary| 4,000,000|360,000|2|从京东爬取的用户评论。1-2星属于负面评论，4-5星属于正面评论，忽略3星，类别的样本数相同。
+Ifeng| 800,000|50,000|5|从凤凰网爬取2006-2016年五个新闻种类的新闻，包括中国大陆政治、国际新闻、港澳台、军事和社会新闻。每个样本只包括新闻的第一段话。每个类别样本数相同。
+Chinanews|1,400,000|112,000|7|从中国新闻网爬取2008-2016年七个新闻种类的新闻，包括中国大陆政治、港澳台政治、国际新闻、金融、文化、娱乐、体育（论文还提到health这个类别，数据里其实没有）。每个样本只包括新闻的第一段话。每个类别样本数相同。
+
+数据文件都是CSV格式，新闻语料除了标签列，还包括了标题和正文。标题和正文可能存在空字段，可以把标题和正文进行拼接作为输入，或者根据需求进行针对性处理。
+
+更详细的说明请参考下述论文或官方[Github](https://github.com/zhangxiangxiao/glyph)，其还提供了日语、韩语、英语、多语分类数据集下载链接。
+
+中文分类语料转存于[百度网盘](https://pan.baidu.com/s/1G-krApbhq-Lb2mxNSQXdhg )：提取码：7xh0 
+
+
+Zhang, X., & LeCun, Y. (2017). Which encoding is the best for text classification in chinese, english, japanese and korean?. arXiv preprint arXiv:1708.02657.
+
+
+---
+
+
 <h2 id='1.4'>1.4 序列标注数据集（分词、命名实体识别、词性标注等）</h2>
 <h3 id='1.4.1'>1.4.1 1998年1月-6月人民日报标注语料</h3>
 
 1300W字的新闻[标注语料](https://pan.baidu.com/s/17djsvYfpYUXrazL0H_mtoA)，该语料可用于分词、NER、POS等任务。标记和格式请参考此[文章](https://cloud.tencent.com/developer/article/1091906)。
+
+<h2 id='1.5'>1.5 语义相似度（文本蕴含）</h2>
+
+<h3 id='1.5.1'>1.5.1 LCQMC </h3>
+
+[LCQMC](http://icrc.hitsz.edu.cn/info/1037/1146.htm)（large-scale Chinese question matching corpus）is more general than paraphrase corpus as it focuses on intent matching rather than paraphrase.
+The corpus contains 260,068 question pairs with manual annotation and we split it into three parts, i.e., a training set containing 238,766 question pairs, a development set with 8,802 question pairs, and a test set with 12,500 question pairs. 
+
+[Download Link 1](https://github.com/pengming617/text_matching) 数据在data目录
+
+[Download Link 2](https://pan.baidu.com/s/1yerI7P6Lvm7HdgrKdRJyGQ ) 提取码：q8y1
+
+Liu, X., Chen, Q., Deng, C., Zeng, H., Chen, J., Li, D., & Tang, B. (2018, August). LCQMC: A Large-scale Chinese Question Matching Corpus. In Proceedings of the 27th International Conference on Computational Linguistics (pp. 1952-1962).
 
 <h1 id='2'>2. 外语语料</h1>
 <h2 id='2.1'>2.1 生语料</h2>
