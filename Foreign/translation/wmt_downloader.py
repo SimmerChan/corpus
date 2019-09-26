@@ -3,7 +3,7 @@
 """
 @author: SimmerChan
 
-@email: hsl
+@email: hsl7698590@gmail.com
 
 @file: wmt_downloader.py
 
