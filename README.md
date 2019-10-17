@@ -17,6 +17,7 @@ PS：
   - [2.3 文本分类数据集](#2.3)
   - [2.4 序列标注数据集（分词、命名实体识别、词性标注等）](#2.4)
   - [2.5 机器翻译](#2.5)
+  - [2.6 语义相似度（文本蕴含）](#2.6)
 - [3. 语言资源](#3)
   - [3.1 实体类](#3.1)
   - [3.2 词典类](#3.2)
@@ -90,9 +91,7 @@ Liu, X., Chen, Q., Deng, C., Zeng, H., Chen, J., Li, D., & Tang, B. (2018, Augus
 <h2 id='2.3'>2.3 文本分类数据集</h2>
 <h2 id='2.4'>2.4 序列标注数据集（分词、命名实体识别、词性标注等）</h2>
 <h2 id='2.5'>2.5 机器翻译</h2>
-
 <h3 id='2.5.1'>2.5.1 Europarl</h3>
-
  欧盟21种语言翻译[平行语料](http://www.statmt.org/europarl/)：20种语言到英语的平行语料，包括保加利亚语、捷克语、丹麦语、德语、希腊语、西班牙语、爱沙尼亚语、芬兰语、法语、匈牙利语、意大利语、立陶宛语、拉脱维亚语、荷兰语、波兰语、葡萄牙语、罗马尼亚语、斯洛伐克语、斯洛文尼亚语、瑞典语。
 
 [百度网盘](https://pan.baidu.com/s/13mpJ-pKgCVMnDgwUgVoPCQ)
@@ -100,7 +99,6 @@ Liu, X., Chen, Q., Deng, C., Zeng, H., Chen, J., Li, D., & Tang, B. (2018, Augus
 ---
 
 <h3 id='2.5.2'>2.5.2 United Nations Parallel Corpus</h3>
-
 [联合国平行语料](https://cms.unov.org/UNCorpus/)，当前版本（1.0）由联合国的官方文件和其他议会文件组成，包含了联合国的六种官方语言（英语、法语、俄语、汉语、阿拉伯语、西班牙语两两之间的平行语料对），语料的内容主要是在1990-2014年之间产生和翻译的，并在句子级别上进行了对齐。
 
 [百度网盘(目前只包含中文到除阿拉伯语的其他语言翻译对)](https://pan.baidu.com/s/1fHDl8PbvsbmCo7a0BCWGlg)
@@ -108,14 +106,12 @@ Liu, X., Chen, Q., Deng, C., Zeng, H., Chen, J., Li, D., & Tang, B. (2018, Augus
 
 
 <h3 id='2.5.3'>2.5.3 News-Commentary</h3>
-
 WMT提供的[新闻评论语料](http://data.statmt.org/news-commentary/v14/)，共98个双语对，15种语言。
 
 [百度网盘](https://pan.baidu.com/s/1RMMuX9eiB5BIpdmWNDH-Tw)
 
 
 <h3 id='2.5.4'>2.5.4 wikititles</h3>
-
 WMT提供的[维基百科标题](http://data.statmt.org/wikititles/v1/)多语对，共11个双语对，14种语言。
 
 [百度网盘](https://pan.baidu.com/s/1Sl_MyzVb4p2P0kiHcx1SQA)
@@ -123,12 +119,21 @@ WMT提供的[维基百科标题](http://data.statmt.org/wikititles/v1/)多语对
 News-Commentary和wikititles的[下载脚本](./Foreign/translation/wmt_downloader.py)
 
 <h3 id='2.5.5'>2.5.5 Ted Talk</h3>
-
 Ted上面有丰富的语料资源，包含了109种语言。ajinkyakulkarni14提供了2014年获取的[平行语料](https://github.com/ajinkyakulkarni14/TED-Multilingual-Parallel-Corpus)，和获取语料的[脚本](https://github.com/ajinkyakulkarni14/How-I-Extracted-TED-talks-for-parallel-Corpus-)。
 
 neubig也提供了他们用于论文实验的Ted[数据](https://github.com/neulab/word-embeddings-for-nmt)。
 
 [neubig数据百度网盘](https://pan.baidu.com/s/1ztRdarsvIRMvgBBmfD9rnQ)
+
+------
+
+
+
+<h2 id='2.5'>2.6 语义相似度（文本蕴含）</h2>
+
+<h3 id='2.6.1'>2.6.1 PAWS and PAWS-X</h3>
+
+Goggle公开的同义句识别[语料](https://github.com/google-research-datasets/paws)。 PAWS是英文语料，包含108463对英文句子对；PAWS-X包含中、法、德、日、韩、西班牙六种语言的语料，每种语言大约5.3W条。
 
 ---
 
