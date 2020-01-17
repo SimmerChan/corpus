@@ -4,6 +4,12 @@ PS：
 1. 数据使用范围、授权请参考原始发布源（如果有的话），如有侵权，请提issue联系删除。
 2. 有的数据源（网站、论文）提供了多语语料，为避免重复，只在中文或外语对应章节列出。如有多语资源，会在相应章节进行说明（如需要特定任务的数据集，可以分别在中文和外语语料对应章节进行查看）。
 
+
+
+数据集大全[The big bad NLP Dataset](https://quantumstat.com/dataset/dataset.html)
+
+
+
 目录：
 - [1. 中文语料](#1)
   - [1.1 生语料](#1.1)
@@ -74,6 +80,12 @@ Zhang, X., & LeCun, Y. (2017). Which encoding is the best for text classificatio
 <h3 id='1.4.1'>1.4.1 1998年1月-6月人民日报标注语料</h3>
 1300W字的新闻[标注语料](https://pan.baidu.com/s/17djsvYfpYUXrazL0H_mtoA)，该语料可用于分词、NER、POS等任务。标记和格式请参考此[文章](https://cloud.tencent.com/developer/article/1091906)。
 
+<h3 id='1.4.2'>1.4.2 CLUENER 细粒度命名实体识别</h3>
+
+[本数据](https://github.com/CLUEbenchmark/CLUENER2020)是在清华大学开源的文本分类数据集THUCTC基础上，选出部分数据进行细粒度命名实体标注，原数据来源于Sina News RSS。 数据分为10个标签类别，分别为: 地址（address），书名（book），公司（company），游戏（game），政府（government），电影（movie），姓名（name），组织机构（organization），职位（position），景点（scene）
+
+
+
 <h2 id='1.5'>1.5 语义相似度（文本蕴含）</h2>
 <h3 id='1.5.1'>1.5.1 LCQMC </h3>
 [LCQMC](http://icrc.hitsz.edu.cn/info/1037/1146.htm)（large-scale Chinese question matching corpus）is more general than paraphrase corpus as it focuses on intent matching rather than paraphrase.
@@ -130,9 +142,7 @@ neubig也提供了他们用于论文实验的Ted[数据](https://github.com/neul
 
 
 <h2 id='2.5'>2.6 语义相似度（文本蕴含）</h2>
-
 <h3 id='2.6.1'>2.6.1 PAWS and PAWS-X</h3>
-
 Goggle公开的同义句识别[语料](https://github.com/google-research-datasets/paws)。 PAWS是英文语料，包含108463对英文句子对；PAWS-X包含中、法、德、日、韩、西班牙六种语言的语料，每种语言大约5.3W条。
 
 ---
