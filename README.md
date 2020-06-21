@@ -8,7 +8,7 @@
 
 关注公众号：尘世美小茶馆，获取更多丰富资源。
 
-![](.\Images\wechat.jpg)
+![](Images/wechat.jpg)
 
 
 
