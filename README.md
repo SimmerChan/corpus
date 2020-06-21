@@ -126,7 +126,7 @@
 <h1 id='1'>1. 中文语料</h1>
 <h2 id='1.1'>1.1 生语料</h2>
 <h3 id='1.1.1'>1.1.1 人民日报新闻数据</h3>
-包含1946年-2003年人民日报全部数据以及文革网（2005-2008）全部图文数据库。原始发布地址不详，只找到转载的[页面](http://www.360doc.com/content/10/0415/14/257553_23177268.shtml) ，作者邮箱应该是 bjdjssgmzsf@yahoo.com ，联系过，没收到回复。原始数据是图文数据库，我将其转存[百度网盘](https://pan.baidu.com/s/1YJ6vVfJQVVLGavs1hAdSuQ) ，然后单独整理了一个sql文件方便使用和查询。大多数情况下，只需要考虑文本内容，我写了一个脚本[rmrb.py](./Chinese/raw_corpus/rmrb.py) 将所有新闻导出到txt文件中，方便使用。新闻一共有137万多条。
+包含1946年-2003年人民日报全部数据以及文革网（2005-2008）全部图文数据库。原始发布地址不详，只找到转载的[页面](http://www.360doc.com/content/10/0415/14/257553_23177268.shtml)   ，作者邮箱应该是 bjdjssgmzsf@yahoo.com ，联系过，没收到回复。原始数据是图文数据库，我将其转存[百度网盘](https://pan.baidu.com/s/1YJ6vVfJQVVLGavs1hAdSuQ)  ，然后单独整理了一个sql文件方便使用和查询。大多数情况下，只需要考虑文本内容，我写了一个脚本[rmrb.py](./Chinese/raw_corpus/rmrb.py)  将所有新闻导出到txt文件中，方便使用。新闻一共有137万多条。
 
 <h3 id='1.1.2'>1.1.2 微信公众号语料库</h3>
 [微信公众号语料库](https://github.com/nonamestreet/weixin_public_corpus)：只包含了纯文本。每行一篇，是JSON格式，name是微信公众号名字，account是微信公众号ID，title是题目，content是正文，数据大约3G。
