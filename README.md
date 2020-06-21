@@ -124,22 +124,29 @@
 
 
 <h1 id='1'>1. 中文语料</h1>
+
 <h2 id='1.1'>1.1 生语料</h2>
+
 <h3 id='1.1.1'>1.1.1 人民日报新闻数据</h3>
+
 包含1946年-2003年人民日报全部数据以及文革网（2005-2008）全部图文数据库。原始发布地址不详，只找到转载的[页面](http://www.360doc.com/content/10/0415/14/257553_23177268.shtml)   ，作者邮箱应该是 bjdjssgmzsf@yahoo.com ，联系过，没收到回复。原始数据是图文数据库，我将其转存[百度网盘](https://pan.baidu.com/s/1YJ6vVfJQVVLGavs1hAdSuQ)  ，然后单独整理了一个sql文件方便使用和查询。大多数情况下，只需要考虑文本内容，我写了一个脚本[rmrb.py](./Chinese/raw_corpus/rmrb.py)  将所有新闻导出到txt文件中，方便使用。新闻一共有137万多条。
 
 <h3 id='1.1.2'>1.1.2 微信公众号语料库</h3>
+
 [微信公众号语料库](https://github.com/nonamestreet/weixin_public_corpus)：只包含了纯文本。每行一篇，是JSON格式，name是微信公众号名字，account是微信公众号ID，title是题目，content是正文，数据大约3G。
 
 ---
 
 <h2 id='1.2'>1.2 结构化数据</h2>
+
 <h3 id='1.2.1'>1.2.1 中国古代人物传记数据库（CBDB）</h3>
+
 [中国历代人物传记数据库](https://projects.iq.harvard.edu/cbdb)（The China Biographical Database, CBDB）是一个线上关系型数据库，其远期目标在于系统性地收入中国历史上所有重要的传记资料，其内容无限制地、免费地提供学术研究。截止2018年9月为止，该数据库一共收录了422,600人的传记资料，这些人主要出自七世纪至十九世纪，该数据库目前致力于增录更多的唐代和明清的人物传记资料。
 
 CBDB的数据是用access和sqlite两种数据库进行存储，我转了一个mysql的[版本](https://pan.baidu.com/s/1olG3Fnn6gCqyo9lgNKYhrw)，表格和字段的具体说明请参考官网。由于数据是不断更新的，需要最新数据的请到官网下载。脚本[cbdb.py](./Chinese/structural_data/cbdb.py)是将sqlite中的数据导入mysql中，如果数据库表格发生改变，可能需要更新一下脚本。
 
 <h2 id='1.3'>1.3 文本分类数据集</h2>
+
 <h3 id='1.3.1'>1.3.1 2018法研杯</h3>
 2018中国‘法研杯’法律智能挑战赛（任务：罪名预测、法条推荐、刑期预测）的[数据](https://cail.oss-cn-qingdao.aliyuncs.com/CAIL2018_ALL_DATA.zip)，数据集共包括268万刑法法律文书，共涉及183条罪名，202条法条，刑期长短包括0-25年、无期、死刑。
 
