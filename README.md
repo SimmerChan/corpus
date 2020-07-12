@@ -433,24 +433,32 @@ ATEC蚂蚁金服语义相似度[数据](https://dc.cloud.alipay.com/index?click_
 
 <h2 id='2.5'>2.5 机器翻译</h2>
 <h3 id='2.5.1'>2.5.1 Europarl</h3>
- 欧盟21种语言翻译[平行语料](http://www.statmt.org/europarl/)：20种语言到英语的平行语料，包括保加利亚语、捷克语、丹麦语、德语、希腊语、西班牙语、爱沙尼亚语、芬兰语、法语、匈牙利语、意大利语、立陶宛语、拉脱维亚语、荷兰语、波兰语、葡萄牙语、罗马尼亚语、斯洛伐克语、斯洛文尼亚语、瑞典语。[百度网盘](https://pan.baidu.com/s/1jqvm7WE-csfdjCKxjjanIA) y7k3
+ 欧盟21种语言翻译[平行语料](http://www.statmt.org/europarl/)：20种语言到英语的平行语料，包括保加利亚语、捷克语、丹麦语、德语、希腊语、西班牙语、爱沙尼亚语、芬兰语、法语、匈牙利语、意大利语、立陶宛语、拉脱维亚语、荷兰语、波兰语、葡萄牙语、罗马尼亚语、斯洛伐克语、斯洛文尼亚语、瑞典语。[百度网盘](https://pan.baidu.com/s/1jqvm7WE-csfdjCKxjjanIA)  y7k3
+
+
 
 ---
 
 <h3 id='2.5.2'>2.5.2 United Nations Parallel Corpus</h3>
-[联合国平行语料](https://cms.unov.org/UNCorpus/)，当前版本（1.0）由联合国的官方文件和其他议会文件组成，包含了联合国的六种官方语言（英语、法语、俄语、汉语、阿拉伯语、西班牙语两两之间的平行语料对），语料的内容主要是在1990-2014年之间产生和翻译的，并在句子级别上进行了对齐。[百度网盘(目前只包含中文到除阿拉伯语的其他语言翻译对)](https://pan.baidu.com/s/1PR8zbd-tvm658vWcqmYS-w) pnhy
+[联合国平行语料](https://cms.unov.org/UNCorpus/)，当前版本（1.0）由联合国的官方文件和其他议会文件组成，包含了联合国的六种官方语言（英语、法语、俄语、汉语、阿拉伯语、西班牙语两两之间的平行语料对），语料的内容主要是在1990-2014年之间产生和翻译的，并在句子级别上进行了对齐。[百度网盘(目前只包含中文到除阿拉伯语的其他语言翻译对)](https://pan.baidu.com/s/1PR8zbd-tvm658vWcqmYS-w)  pnhy
+
+
 
 ---
 
 <h3 id='2.5.3'>2.5.3 News-Commentary</h3>
-WMT提供的[新闻评论语料](http://data.statmt.org/news-commentary/v14/)，共98个双语对，15种语言。[百度网盘](https://pan.baidu.com/s/1CJYaZjgOj1hYnI1qyDPtfA) igss
+WMT提供的[新闻评论语料](http://data.statmt.org/news-commentary/v14/)，共98个双语对，15种语言。[百度网盘](https://pan.baidu.com/s/1CJYaZjgOj1hYnI1qyDPtfA)  igss
+
+
 
 ---
 
 <h3 id='2.5.4'>2.5.4 wikititles</h3>
-WMT提供的[维基百科标题](http://data.statmt.org/wikititles/v1/)多语对，共11个双语对，14种语言。[百度网盘](https://pan.baidu.com/s/1igFM8Iv-hchKvGhaJQ7VHQ) inxn
+WMT提供的[维基百科标题](http://data.statmt.org/wikititles/v1/)多语对，共11个双语对，14种语言。[百度网盘](https://pan.baidu.com/s/1igFM8Iv-hchKvGhaJQ7VHQ)  inxn
 
 News-Commentary和wikititles的[下载脚本](./Foreign/translation/wmt_downloader.py)
+
+
 
 ---
 
@@ -459,7 +467,9 @@ Ted上面有丰富的语料资源，包含了109种语言。ajinkyakulkarni14提
 
 neubig也提供了他们用于论文实验的Ted[数据](https://github.com/neulab/word-embeddings-for-nmt)。
 
-[neubig数据百度网盘](https://pan.baidu.com/s/1SYjZOuhiawlxjKbgx8ooXA) dn6y
+[neubig数据百度网盘](https://pan.baidu.com/s/1SYjZOuhiawlxjKbgx8ooXA)  dn6y
+
+
 
 ---
 
