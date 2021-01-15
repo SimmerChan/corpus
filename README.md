@@ -105,6 +105,7 @@
   - [2.8 阅读理解](#2.8)
     - [2.8.1 HotpotQA](#2.8.1)
     - [2.8.2 SQuAD v2.0](#2.8.2)
+    - [2.8.3 CoQA](#2.8.3)
   - [2.9 文本摘要](#2.9)
     - [2.9.1 BigPatent](#2.9.1)
 - [3. 语言资源](#3)
@@ -601,6 +602,12 @@ neubig也提供了他们用于论文实验的Ted[数据](https://github.com/neul
 <h3 id='2.8.2'>2.8.2 SQuAD v2.0</h3>
 
 [SQuAD v2.0](https://rajpurkar.github.io/SQuAD-explorer/)：15万问答对，依据给出的上下文，其中10万可回答，5万不可回答。
+
+---
+
+<h3 id='2.8.3'>2.8.3 CoQA</h3>
+
+[CoQA](https://stanfordnlp.github.io/coqa/)：对话问答系统（Conversational Question Answering systems）数据集，从8000对话中整理了12.7W问题和答案。数据集特点：问题是对话形式；答案是自由文本格式；每个答案都能在给定的文章中找到佐证（evidence）；文章总共覆盖了7个不同领域。相对阅读理解任务，CoQA需要考虑指代消解和推理两个方面的难点。
 
 ---
 
